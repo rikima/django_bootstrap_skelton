@@ -1,11 +1,11 @@
-from django.shortcuts import render
-from django.template import Context, loader
-from django.contrib.auth import logout
+from django.contrib.auth.decorators import login_required
 
 from lib.http_decorators import http_response
 
-@http_response('base.html')
+@login_required
+@http_response('index.html')
 def index(request):
-    #c = Context(dict())
-    #return c
-    return dict()
+    user = request.user
+    print(user)
+    return dict(user=user)
+

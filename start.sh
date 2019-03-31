@@ -1,2 +1,3 @@
 #!/bin/sh
-python manage.py runserver 8000
+
+~/anaconda3/bin/python3 manage.py runserver 8000
