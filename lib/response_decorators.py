@@ -1,7 +1,17 @@
+<<<<<<< HEAD
 import csv
 
 from django.http import HttpResponse
 from django.template import Context, loader
+=======
+import sys
+import csv
+from datetime import datetime
+
+from django.http import HttpResponse
+from django.template import Context, loader
+from django.utils import simplejson
+>>>>>>> origin/master
 
 debug = True
 
@@ -72,9 +82,19 @@ def _post_param(request, param_name, default=None):
 def _get_param(request, param_name, default=None):
     return request.GET.get(param_name, default=default)
 
+<<<<<<< HEAD
 def _get_param_as_int(request, param_name, default=0):
     return int(request.GET.get(param_name, default=default))
     
+=======
+
+
+def _get_param_as_int(request, param_name, default=0):
+    return int(request.GET.get(param_name, default=default))
+    
+
+    
+>>>>>>> origin/master
 def _http_response(template, context):
     t = loader.get_template(template)
     return HttpResponse(t.render(context))

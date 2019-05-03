@@ -3,6 +3,10 @@ from datetime import datetime
 
 from django.http import HttpResponse
 from django.template import Context, loader
+<<<<<<< HEAD
+=======
+from django.utils import simplejson
+>>>>>>> origin/master
 
 debug = True
 

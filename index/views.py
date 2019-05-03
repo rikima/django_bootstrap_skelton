@@ -8,4 +8,3 @@ def index(request):
     user = request.user
     print(user)
     return dict(user=user)
-

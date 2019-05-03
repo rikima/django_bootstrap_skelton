@@ -4,6 +4,7 @@ WSGI config for django_bootstrap_skelton project.
 It exposes the WSGI callable as a module-level variable named ``application``.
 
 For more information on this file, see
+<<<<<<< HEAD
 https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/
 """
 
